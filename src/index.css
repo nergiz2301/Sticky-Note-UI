@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  padding: 5px;
+}
+.color {
+  background-color: #e6f7ff;
+}
+
+.content-container,
+.add-button {
+  font-size: 14px;
+  padding: 5px;
+  margin: 8px;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row wrap;
+  font-family: Arial, sans-serif;
+}
+.add-button {
+  height: 8vh;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: bolder;
+  background-color: #eee;
+  outline: none;
+}
+.input {
+  height: 8vh;
+  max-width: 300px;
+  margin: 5px;
+  font-size: 14px;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+}
+
+.note {
+  font-family: "Permanent Marker", cursive;
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  background-color: lightyellow;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 3px lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.note__title,
+.note__description {
+  font-family: "Permanent Marker", cursive;
+  width: 100%;
+  padding: 8px 14px;
+  background: transparent;
+}
+
+.note__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.note__description {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.note__delete {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  color: lightgrey;
+  padding: 5px;
+}
+
+.note__delete:hover {
+  color: black;
+  cursor: pointer;
+}
